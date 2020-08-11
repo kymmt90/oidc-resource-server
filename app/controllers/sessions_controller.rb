@@ -21,6 +21,10 @@ class SessionsController < ApplicationController
 
   private
 
+  def current_user
+    @current_user ||= User.find_by(id: session[:current_user_id])
+  end
+
   def signin(user)
     reset_session
     session[:current_user_id] = user.id

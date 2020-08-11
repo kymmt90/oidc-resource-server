@@ -1,8 +1,9 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user
+  before_action -> { doorkeeper_authorize! :read }, only: [:index, :show]
+  before_action -> { doorkeeper_authorize! :write }, only: [:create, :destroy]
 
   def index
-    @items = current_user.items
+    @items = current_resource_owner.items
 
     respond_to do |format|
       format.json
@@ -10,7 +11,7 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = current_user.items.find(params[:id])
+    @item = current_resource_owner.items.find(params[:id])
 
     respond_to do |format|
       format.json
@@ -18,7 +19,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    item = current_user.items.build(user_params)
+    item = current_resource_owner.items.build(user_params)
 
     if item.save
       respond_to do |format|
@@ -30,7 +31,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    @item = current_user.items.find(params[:id])
+    @item = current_resource_owner.items.find(params[:id])
 
     @item.destroy
 
@@ -39,14 +40,11 @@ class ItemsController < ApplicationController
 
   private
 
-  def authenticate_user
-    return if current_user
-
-    respond_to do |format|
-      format.json { render json: { errors: ['unauthorized'] }, status: :unauthorized }
-    end
-
-    return
+  def current_resource_owner
+    @current_resource_owner ||=
+      if doorkeeper_token
+        User.find_by(id: doorkeeper_token.resource_owner_id)
+      end
   end
 
   def user_params
