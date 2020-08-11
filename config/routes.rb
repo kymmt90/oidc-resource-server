@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'sessions#new'
+
   resources :items, defaults: { format: :json }, only: [:index, :show, :create, :destroy]
   resource :session, only: [:new, :create, :destroy]
 end
