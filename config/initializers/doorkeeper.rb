@@ -205,7 +205,7 @@ Doorkeeper.configure do
   #
   # enable_application_owner confirmation: false
 
-  default_scopes :read
+  default_scopes :openid, :read
   optional_scopes :write
   enforce_configured_scopes
 
@@ -217,12 +217,6 @@ Doorkeeper.configure do
   # Note: scopes should be from configured_scopes (i.e. default or optional)
   #
   # scopes_by_grant_type password: [:write], client_credentials: [:update]
-
-  # Forbids creating/updating applications with arbitrary scopes that are
-  # not in configuration, i.e. +default_scopes+ or +optional_scopes+.
-  # (disabled by default)
-  #
-  # enforce_configured_scopes
 
   # Change the way client credentials are retrieved from the request object.
   # By default it retrieves first from the `HTTP_AUTHORIZATION` header, then
@@ -307,23 +301,7 @@ Doorkeeper.configure do
   #
   # custom_introspection_response CustomIntrospectionResponder
 
-  # Specify what grant flows are enabled in array of Strings. The valid
-  # strings and the flows they enable are:
-  #
-  # "authorization_code" => Authorization Code Grant Flow
-  # "implicit"           => Implicit Grant Flow
-  # "password"           => Resource Owner Password Credentials Grant Flow
-  # "client_credentials" => Client Credentials Grant Flow
-  #
-  # If not specified, Doorkeeper enables authorization_code and
-  # client_credentials.
-  #
-  # implicit and password grant flows have risks that you should understand
-  # before enabling:
-  #   http://tools.ietf.org/html/rfc6819#section-4.4.2
-  #   http://tools.ietf.org/html/rfc6819#section-4.4.3
-  #
-  # grant_flows %w[authorization_code client_credentials]
+  grant_flows %w[authorization_code implicit_oidc]
 
   # Allows to customize OAuth grant flows that +each+ application support.
   # You can configure a custom block (or use a class respond to `#call`) that must
