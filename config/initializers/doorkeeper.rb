@@ -301,7 +301,7 @@ Doorkeeper.configure do
   #
   # custom_introspection_response CustomIntrospectionResponder
 
-  grant_flows %w[authorization_code implicit_oidc]
+  grant_flows %w[authorization_code]
 
   # Allows to customize OAuth grant flows that +each+ application support.
   # You can configure a custom block (or use a class respond to `#call`) that must
