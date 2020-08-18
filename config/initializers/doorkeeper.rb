@@ -206,7 +206,7 @@ Doorkeeper.configure do
   # enable_application_owner confirmation: false
 
   default_scopes :openid, :read
-  optional_scopes :write
+  optional_scopes :write, :email
   enforce_configured_scopes
 
   # Allows to restrict only certain scopes for grant_type.

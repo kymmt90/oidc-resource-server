@@ -5,32 +5,32 @@ Doorkeeper::OpenidConnect.configure do
 
   signing_key <<~KEY
     -----BEGIN PRIVATE KEY-----
-    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDobo8+umqinexo
-    z33QcD5H6zHcNzlc4THm6hJVYp84v6Yh8+q7xWnYAcYZqJuI0qFlEsm++Pw5mERv
-    PQnJ9lfpJp+H/2BO9jKe2Wqf03eMBmiRWe1xzHZaWJ1PQH0RoisgDOAbsurB7jF5
-    X7JuAk8eQ6tOFl5YkM7Q/AoBrA5A71iJoSysqamUtiuIaNBMK+14/LQcJaTdX1QG
-    2fY28u2NDVbgQtJ5HIg7sfsA2lOfuWruPvwfg2VZa9eBPbczi9Eja7wFoX0GRWVZ
-    7M1KdegNhSxJPE/2eigDMhaGTyIvpPRyZwHv0s9I9XKuC4yUNyCzTBsYXskQSJQA
-    uvtdXL7NAgMBAAECggEAXOcMBGOYicUboE0HGdAzZKWieUXtfK1aN9TpXQ2dXJ5l
-    tf57nW/rvXYAC3N0L30ZG4Al+Vol3pN5DwlTp1D6lGtmqoItqYIIe6ulTZrFlsdc
-    9nP+T1UNHVF8FxhMpUavfBEJZqjd4oPlbIEOnZ/4pb0gdIbGURoYQDntefueet8s
-    0cg6oql15Owu1NsXXMyNElfNkCczKNICyPa7izPifXB9IaLCDH9AzdV8XBGxPqeo
-    s8K4E8X4mHstG2PBSIlh6gSvniGSz/HQDzQamb/QI73lc78+w0Ah8UfAj21rLwib
-    NMQ7BIlnPOE1IGf4VZ4aYVl8ukpClvbD5SSTgwRwVQKBgQD+y3ArsGHwSJSCciNu
-    94i/sZ7BInONKJw5NG55HxRkykMAd3bms7rx5rWwmQjsE8DQ4b07q0/71r1JYh9F
-    ZmHEuJ9AHwIb/9HMM91jYZvmWA99Tjz5MCmhO5TPAgMSZa2Sn3BT+Y2ilioGw+23
-    mQUqf7gM3FoyaTsTOT1qTnOabwKBgQDpiAofk1kasyB6+nBM6otLk8b9HDm6HvtN
-    dJNqY3zKAteGexep6MQJOwkmW5n1wguWQL0YGhM3fRMQMVi+Keb0FC+TFXjG2nKy
-    9+lDK+Er2A4l4Wo/wTbSbWn0MQ/YWlVCAoEYOXvbHyHVRQrRBvoZn6hc43nYKueY
-    czRrkFLIgwKBgFaotsQFP6pL5UbgrzCEvFwGe2pQ32A5WbkTHifP7E3DhTpZZ3Vb
-    18+CmnUv95rjtQbWYFg1EgUjqkmVN/GQutv/txpF8Z+4SJDdawTsI+waM1p5C7/t
-    I5uU+i3WD1lof7qIw9mr3QJZdH3MkcOKJfmoat7k60CODeuh4kOP3z29AoGBALhx
-    UpWHuftleITIocOOB0BE0gf8r/c5GwAcz4VaWCfwwKqdM55lkdc8gkiCVoIMpTwh
-    m3eauIy9wz2py849qAQkoUKI1eAwjiCdvuTnlisbtGjktRbvkk32TpWn3jzhc67z
-    7WPlmtYAq6cWpalb2lI8kCv1GbnKgSod60v9K/TjAoGAOUFzU7q9P5/wcLqNoC5h
-    TsiEoi9RFjdu/NAY1JMS0kyM9fAUc1y1KkE69XmybFmGr8VSqZiC4c4vMDWjFYvV
-    UAz1quA5KwajI+VZsOWHzqsZfN98ier9FLvwHcmGOJws9nrBx1lijgb/gn415ee/
-    tQ735yd0owi6YZpjv2kuJCE=
+    MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC//FGDWm5hqh4K
+    3A/xyzJNa4Bg378fdu0DB2ji0F128p96R3bP+bdOA37SLMLk5/yzLvAAFxJPr2hd
+    S2r909qiqEhMJ3zprkCQpxjakTcdxovE4gobvNYjK5+CvojLC56+NPd2ij0LorPm
+    qt9KRL2uuRpsWDzVxGVML1FkKb7CYIDg1pLdDvltj44UbO6jbPwJmPhw85QH9prx
+    /wXH4Z27/wVnkHtTZ+JDSEpGcr2+KTIX3d4rK9PT/N5rrShfFgvXN+wkmt5A3mmq
+    E2eFDrkGaSMq1nhEEAdru3FD54tBG5Pzxcg46NBVZBlkBGOePurC++sHp345fQKu
+    VH701tLjAgMBAAECggEBAL1y4IENGMWZWKIAvF8u04mgXoO552DGO2X0xuSjFsgM
+    7aB9qtnaIq+CNYBzGTNHVY7/72c3XSNzBTqi9IZbq3E9PHKhuNrjz+Sub5EnIUtp
+    pHz5TV5Hvsvf/TzIhjZPVit+GwBHs6uqt3oU/djM8pzbHh7yB74uWoOOYfPEWfB2
+    EsOZPNNONlkgzjc5z+bKqOfYJLcwk7kQFNxclbUNOvG2yNiutfnzO0zMRE/9ENwd
+    dpFEdQ5bjjTelEgVvwnyziGsHwklLX654d//jhFsTm8xWwx+aSyjWyNrixeSOwim
+    TfZ5lbAZkkeC5PBraWTh/4+jV14gubzT6I9bMRgu2ckCgYEA4L2/+hiipkUtMyQz
+    HA7fhKBniWmeQCQVfSJ3NvILZ2lX4lI6NVVuODbNw4jnQfchbuzK16H+TFz2Eihu
+    3n91sOArAyXXgRPXCP9eIYT3AuvM37PeAzszsHCLTQFOpqWB9dnup2jfEJMLOErL
+    KI0irpyFCHIn8a9wuv2aogeibNcCgYEA2rBBlpuVSu4+wU4U7Md49Wt2DE9wrWOm
+    CD85xRU/iTTDahG5gqVBryWtGYM4BvAPEi5R9+PgYThgUpuEiBgrkUUQQZfcdFBO
+    MltZs4Ur/8wdPgfCOR1ZCIhXZ2lhnjvvCBg0DJ8hO7snZnaJLF8pksaG0WoDhpx2
+    3G4Jx4FzXNUCgYBPoizCO7R2YhCwDGWnzYVaA1RslmYiqCaNHodLityLmgIwCZ7i
+    gxD5DkI+xOXcs+q+2VzOp3HqMQ5oRLd0U4mqUOQsy13fON57K7F5AxpbiJ4hriQ+
+    1N1t6ZMSiCIMXpz8NmqgG0LfJptVKPtvtQLTCFcDNR/+PYIeX/pI65ecJQKBgQDB
+    o3wQDad998NdivQATQgP151pfRX6kde8Sa+vkQb3SN8XlqY6xnWIzsWdZ5E+o2XU
+    5WrzIrXVoAO6YbZSg4RgV1Tzn7I207zJ3hVpXiv9jhD+kgQqapAhfAhYqvkjEVKw
+    Si4cVvMoXqmekqsXvROkwWEzILoKgZTFzjGelENAGQKBgQCKYhMh4YXDUEcmXv6X
+    g1B8e0QRn6aAOEykxDDeED4hrFjYo/0K2OpLbUfM/FHpjD8hKPTsvUIsxcs4l5ID
+    /g+34gBc3ojvOszVurgCohhEZVXNU2XzKcXkhjfHb1R26kUBA4kn1Xjb38O+QMhU
+    6IeZwCEi4ojNb5FUSXpH5Sv85Q==
     -----END PRIVATE KEY-----
   KEY
 
@@ -77,14 +77,9 @@ Doorkeeper::OpenidConnect.configure do
   # Expiration time on or after which the ID Token MUST NOT be accepted for processing. (default 120 seconds).
   # expiration 600
 
-  # Example claims:
-  # claims do
-  #   normal_claim :_foo_ do |resource_owner|
-  #     resource_owner.foo
-  #   end
-
-  #   normal_claim :_bar_ do |resource_owner|
-  #     resource_owner.bar
-  #   end
-  # end
+  claims do
+    claim :email do |resource_owner|
+      resource_owner.email
+    end
+  end
 end
